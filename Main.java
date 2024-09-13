@@ -1,68 +1,41 @@
-import java.sql.SQLOutput;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //esta es un vairbale de tipo estring
-        String nombre = "Nicolas";
 
-        //esta es una variable de tipo int
-        int edad=22;
-
-        //varible de tipo cararter
-        char genero = 'h';
-
-        //variable de tipo decimal
-        double estatura= 1.75;
-
-        boolean esCasado= false;
-        //comentario nuevo
-        
-
-
-
-
-
-        System.out.println(nombre);
-        System.out.println(edad);
-        System.out.println(genero);
-        System.out.println( estatura);
-        System.out.println(esCasado);
-
-        System.out.println("mi nombre es " + nombre + " y mi edad es : " + edad + " mi genero es :" + genero + " mi altura es :" + estatura + " soy casado  : "+ esCasado  );
-
-
-        //SECCION UNO
-        System.out.println("el mobre de mi hermana andrea y tiene 24 ans mide 1.65 mts nacio en el 2002 es mujer");
-
+        //seccion uno
+        System.out.println("Título: ¿Qué hace un bosón como tú en un Big Bang como este?");
+        System.out.println("Autor: Javier Santaolalla");
+        System.out.println("Anio: 2016\nGénero: Ciencia Divulgativa\nPáginas: 256\n");
 
         //seccion dos
-        String nombreDeMiMascota = " pambazo ";
-        String raza = " gold fish";
-        String color = " calico";
-        System.out.println(" el nombre de mi mascota es " + nombreDeMiMascota  + " es un " + raza + " y es de color " + color );
-        //nueva rama
+        String nombrePais = "Japón";
+        String capital = "Tokio";
+        String idiomaOficial = "Japonés";
+        double poblacion = 125.8; // en millones
+        String moneda = "Yen";
+
+        // Mostrar información del país
+
+        System.out.println("Nombre del país: " + nombrePais);
+        System.out.println("Capital: " + capital);
+        System.out.println("Idioma oficial: " + idiomaOficial);
+        System.out.println("Población (en millones): " + poblacion);
+        System.out.println("Moneda: " + moneda + "\n" );
 
 
         //seccion tres
-        String nombrePelicula = "piratas del caribe";
-        int anDeLazanamineto = 2001;
-        double duracion = 2.5;
-        String generoP = " accion y aventura " ;
-        String director= "yo merengues";
-        System.out.println("mi pelicula favorita es : " + nombrePelicula+ " se lanzo en el ans " + anDeLazanamineto + " el genero es  " + generoP + " el director es " + director );
-        System.out.println();
-
-
-
-
-
-
-
-
-
-
+        String nombre = "Napoleón Bonaparte";
+        String fechaNacimiento = "15 de agosto de 1769";
+        String nacionalidad = "Francés";
+        String ocupacion = "Militar y emperador";
+        String logro = "Reformas legales y políticas en Europa, Código Napoleónico";
+        System.out.println("Personaje histórico favorito:");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Fecha de nacimiento: " + fechaNacimiento);
+        System.out.println("Nacionalidad: " + nacionalidad);
+        System.out.println("Ocupación: " + ocupacion);
+        System.out.println("Logro destacado: " + logro);
 
     }
 }
