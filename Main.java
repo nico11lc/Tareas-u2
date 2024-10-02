@@ -2,40 +2,33 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        //operacion uno
+        double operacionUno = ((12 + 8) * (5 - 3) - (6 / 2));
+        double operacionUnoD = operacionUno / ((3 * 4) + (8 / 2));
 
-        //seccion uno
-        System.out.println("Título: ¿Qué hace un bosón como tú en un Big Bang como este?");
-        System.out.println("Autor: Javier Santaolalla");
-        System.out.println("Anio: 2016\nGénero: Ciencia Divulgativa\nPáginas: 256\n");
+        //operacion dos
+        double partUno = ((9*5)-(15+3) + (8*2) - (12/4) * (7+2) - ((6*3)/2) );
+        double partDos = (( 2 + ((2*3)/(4-2)))  + (5 * ( (8/4 )+ 1 ) )  - ( 6/ (2+1) ));
+        double resPartSup = partUno / partDos;
 
-        //seccion dos
-        String nombrePais = "Japón";
-        String capital = "Tokio";
-        String idiomaOficial = "Japonés";
-        double poblacion = 125.8; // en millones
-        String moneda = "Yen";
+        //
+        double partTres = ((((4+2) *(7-1))/(3-1))  + ((3*2) - (5+1)) * ( 8/2));
+        double partCuatro = ((3+ ((6/2 ) + ( 7/2 ))) + (2 * (3+ (8/4))));
+        double restPartInf = partTres / partCuatro ;
 
-        // Mostrar información del país
-
-        System.out.println("Nombre del país: " + nombrePais);
-        System.out.println("Capital: " + capital);
-        System.out.println("Idioma oficial: " + idiomaOficial);
-        System.out.println("Población (en millones): " + poblacion);
-        System.out.println("Moneda: " + moneda + "\n" );
+        double resFinal = resPartSup / restPartInf;
 
 
-        //seccion tres
-        String nombre = "Napoleón Bonaparte";
-        String fechaNacimiento = "15 de agosto de 1769";
-        String nacionalidad = "Francés";
-        String ocupacion = "Militar y emperador";
-        String logro = "Reformas legales y políticas en Europa, Código Napoleónico";
-        System.out.println("Personaje histórico favorito:");
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Fecha de nacimiento: " + fechaNacimiento);
-        System.out.println("Nacionalidad: " + nacionalidad);
-        System.out.println("Ocupación: " + ocupacion);
-        System.out.println("Logro destacado: " + logro);
+
+        //operacion tres
+
+        double operacionTres =(((6 + 4) * 3) - (18 / 2)) ;
+        double operacionTresD =  operacionTres/((8 - 5) + (3 * 2));
+
+        System.out.println( "el resultado de la operacion uno es :"+ operacionUnoD );
+        System.out.println( "el resultado de la operacion dos es:  "  + resFinal  );
+        System.out.println( "el resultado de la operacion tres es: " + operacionTresD);
 
     }
+
 }
