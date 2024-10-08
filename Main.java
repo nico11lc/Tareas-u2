@@ -1,34 +1,55 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
-        //operacion uno
-        double operacionUno = ((12 + 8) * (5 - 3) - (6 / 2));
-        double operacionUnoD = operacionUno / ((3 * 4) + (8 / 2));
+        Scanner sc = new Scanner(System.in);
 
-        //operacion dos
-        double partUno = ((9*5)-(15+3) + (8*2) - (12/4) * (7+2) - ((6*3)/2) );
-        double partDos = (( 2 + ((2*3)/(4-2)))  + (5 * ( (8/4 )+ 1 ) )  - ( 6/ (2+1) ));
-        double resPartSup = partUno / partDos;
+        // Capturando datos de domicilio
+        System.out.println("Ingrese los datos de su domicilio:");
+        System.out.print("Calle: ");
+        String calle = sc.nextLine();
+        System.out.print("Número: ");
+        String numero = sc.nextLine();
+        System.out.print("Colonia: ");
+        String colonia = sc.nextLine();
+        System.out.print("Ciudad: ");
+        String ciudad = sc.nextLine();
+        System.out.print("Código Postal: ");
+        String codigoPostal = sc.nextLine();
 
-        //
-        double partTres = ((((4+2) *(7-1))/(3-1))  + ((3*2) - (5+1)) * ( 8/2));
-        double partCuatro = ((3+ ((6/2 ) + ( 7/2 ))) + (2 * (3+ (8/4))));
-        double restPartInf = partTres / partCuatro ;
+        // Capturando datos escolares
+        System.out.println("\nIngrese los datos de su educación:");
+        System.out.print("Primaria (nombre): ");
+        String primaria = sc.nextLine();
+        System.out.print("Secundaria (nombre): ");
+        String secundaria = sc.nextLine();
+        System.out.print("Preparatoria (nombre): ");
+        String preparatoria = sc.nextLine();
 
-        double resFinal = resPartSup / restPartInf;
+        // Capturando datos del deporte favorito
+        System.out.println("\nIngrese los datos de su deporte favorito:");
+        System.out.print("Nombre del deporte: ");
+        String deporte = sc.nextLine();
+        System.out.print("Equipo o jugador favorito: ");
+        String equipoJugador = sc.nextLine();
+        System.out.print("Frecuencia con la que lo practica: ");
+        String frecuencia = sc.nextLine();
 
-
-
-        //operacion tres
-
-        double operacionTres =(((6 + 4) * 3) - (18 / 2)) ;
-        double operacionTresD =  operacionTres/((8 - 5) + (3 * 2));
-
-        System.out.println( "el resultado de la operacion uno es :"+ operacionUnoD );
-        System.out.println( "el resultado de la operacion dos es:  "  + resFinal  );
-        System.out.println( "el resultado de la operacion tres es: " + operacionTresD);
-
+        // Mostrando todos los datos ingresados
+        System.out.println("\n--- Datos ingresados ---");
+        System.out.println("Domicilio:");
+        System.out.println("Calle: " + calle + ", Número: " + numero + ", Colonia: " + colonia + ", Ciudad: " + ciudad + ", Código Postal: " + codigoPostal);
+        System.out.println("\nEducación:");
+        System.out.println("Primaria: " + primaria);
+        System.out.println("Secundaria: " + secundaria);
+        System.out.println("Preparatoria: " + preparatoria);
+        System.out.println("\nDeporte favorito:");
+        System.out.println("Deporte: " + deporte);
+        System.out.println("Equipo o jugador favorito: " + equipoJugador);
+        System.out.println("Frecuencia de práctica: " + frecuencia);
     }
-
 }
