@@ -1,113 +1,64 @@
-
-import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        //delcarion de variables
-        String productoUno;
-        String productoDos;
-        String productoTres;
-        int cantidadUno;
-        int cantidadDos;
-        int cantidadTres;
-        double precioUno;
-        double precioDos;
-        double precioTres;
-        double descUno;
-        double descDos;
-        double descTes;
-        double impuestoUno;
-        double impuestoDos;
-        double impuestoTres;
+        Random rand = new Random();
 
-        //entrada de datos
-        System.out.println("ingrese el producto 1 : ");
-        productoUno = sc.nextLine();
-        System.out.println("ingresa la catidad de productos : ");
-        cantidadUno = sc.nextInt();
-        System.out.println("ingrese precio unitario del producto : ");
-        precioUno = sc.nextDouble();
-        System.out.println("ingrese el porcentaje del descuento : ");
-        descUno = sc.nextDouble();
-        System.out.println("ingrese los impuestos aplicables en porcentaje : ");
-        impuestoUno = sc.nextDouble();
-        sc.nextLine();// Limpiar buffer
-        System.out.println("\n");
+        // Genera números aleatorios
+        int num1 = rand.nextInt(100) + 1;
+        int num2 = rand.nextInt(100) + 1;
+        int num3 = rand.nextInt(100) + 1;
+        int num4 = rand.nextInt(100) + 1;
+        int num5 = rand.nextInt(100) + 1;
+        int num6 = rand.nextInt(100) + 1;
+        int num7 = rand.nextInt(100) + 1;
+        int num8 = rand.nextInt(100) + 1;
+        int num9 = rand.nextInt(100) + 1;
+        int num10 = rand.nextInt(100) + 1;
 
-        //entrada de datos
-        System.out.println("ingresa el producto 2 : ");
-        productoDos = sc.nextLine();
-        System.out.println("ingresa la catidad de productos : ");
-        cantidadDos = sc.nextInt();
-        System.out.println("ingrese el precio unitario del producto : ");
-        precioDos = sc.nextDouble();
-        System.out.println("ingresa el porcentaje del descuento : ");
-        descDos = sc.nextDouble();
-        System.out.println("ingrese los impuestos  aplicables en porcentaje : ");
-        impuestoDos = sc.nextDouble();
-        sc.nextLine();// Limpiar buffer
-        System.out.println("\n");
+        // Suma de los números
+        double suma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10;
 
-        //entrada de datos
-        System.out.println("ingresa el producto 3 : ");
-        productoTres = sc.nextLine();
-        System.out.println("ingresa la catidad de productos : ");
-        cantidadTres = sc.nextInt();
-        System.out.println("ingrese el precio unitario del producto : ");
-        precioTres = sc.nextDouble();
-        System.out.println("ingresa el porcentaje del descuento : ");
-        descTes = sc.nextDouble();
-        System.out.println("ingrese los impuestos  aplicables en porcentaje : ");
-        impuestoTres = sc.nextDouble();
-        sc.nextLine();// Limpiar buffer
-        System.out.println("\n");
+        // Calcula las raíces cuadradas
+        double raiz1 = Math.sqrt(num1);
+        double raiz2 = Math.sqrt(num2);
+        double raiz3 = Math.sqrt(num3);
+        double raiz4 = Math.sqrt(num4);
+        double raiz5 = Math.sqrt(num5);
+        double raiz6 = Math.sqrt(num6);
+        double raiz7 = Math.sqrt(num7);
+        double raiz8 = Math.sqrt(num8);
+        double raiz9 = Math.sqrt(num9);
+        double raiz10 = Math.sqrt(num10);
 
-        //salida producto uno
-        System.out.println("resumen del pedido :");
-        System.out.println("producto 1 : " + productoUno);
-        System.out.println("cantidad 1: " + cantidadUno);
-        double precioTotalUno = precioUno * cantidadUno;
-        System.out.println("precio total sin descuento  : " + precioTotalUno);
-        descUno = precioTotalUno * (descUno / 100);
-        System.out.println("descuento: " + descUno);
-        double precioDescUno = precioTotalUno - descUno;
-        System.out.println("precio con descuento : " + precioDescUno);
-        impuestoUno = precioDescUno * (impuestoUno / 100);
-        System.out.println("impuesto aplicado ; " + impuestoUno);
-        double TotalAPagarUno = precioDescUno + impuestoUno;
-        System.out.println("total a pagar : " + TotalAPagarUno);
-        System.out.println("\n");
+        // Eleva los números al cuadrado
+        double cuadrado1 = Math.pow(num1, 2);
+        double cuadrado2 = Math.pow(num2, 2);
+        double cuadrado3 = Math.pow(num3, 2);
+        double cuadrado4 = Math.pow(num4, 2);
+        double cuadrado5 = Math.pow(num5, 2);
+        double cuadrado6 = Math.pow(num6, 2);
+        double cuadrado7 = Math.pow(num7, 2);
+        double cuadrado8 = Math.pow(num8, 2);
+        double cuadrado9 = Math.pow(num9, 2);
+        double cuadrado10 = Math.pow(num10, 2);
 
-        //salida producto Dos
-        System.out.println("producto 2: " + productoDos);
-        System.out.println("cantidad 2: " + cantidadDos);
-        double precioTotalDos = precioDos * cantidadDos;
-        System.out.println("precio total sin descuento  : " + precioTotalDos);
-        descDos = precioTotalDos * (descDos / 100);
-        System.out.println("descuento: " + descDos);
-        double precioDescDos = precioTotalDos - descDos;
-        System.out.println("precio con descuento : " + precioDescDos);
-        impuestoDos = precioDescDos * (impuestoDos / 100);
-        System.out.println("impuesto aplicado ; " + impuestoDos);
-        double TotalAPagarDos = precioDescDos + impuestoDos;
-        System.out.println("total a pagar : " + TotalAPagarDos);
-        System.out.println("\n");
+        // Calcula la media
+        double media = suma / 10;
 
-        //salida producto tres
-        System.out.println("producto 3: " + productoTres);
-        System.out.println("cantidad 3: " + cantidadTres);
-        double precioTotalTres = precioTres * cantidadTres;
-        System.out.println("precio total sin descuento  : " + precioTotalTres);
-        descTes = precioTotalTres * (descTes / 100);
-        System.out.println("descuento: " + descTes);
-        double precioDescTres = precioTotalTres - descTes;
-        System.out.println("precio con descuento : " + precioDescTres);
-        impuestoTres = precioDescTres * (impuestoTres / 100);
-        System.out.println("impuesto aplicado ; " + impuestoTres);
-        double TotalAPagarTres = precioDescTres + impuestoTres;
-        System.out.println("total a pagar : " + TotalAPagarTres);
+        // Calcula la desviación estándar
+        double sumaDesviaciones = Math.pow(num1 - media, 2) + Math.pow(num2 - media, 2) + Math.pow(num3 - media, 2)
+                + Math.pow(num4 - media, 2) + Math.pow(num5 - media, 2) + Math.pow(num6 - media, 2)
+                + Math.pow(num7 - media, 2) + Math.pow(num8 - media, 2) + Math.pow(num9 - media, 2)
+                + Math.pow(num10 - media, 2);
 
+        double desviacionEstandar = Math.sqrt(sumaDesviaciones / 10);
 
+        // Muestra los resultados
+        System.out.println("Números generados: " + num1 + ", " + num2 + ", " + num3 + ", " + num4 + ", " + num5 + ", " + num6 + ", " + num7 + ", " + num8 + ", " + num9 + ", " + num10);
+        System.out.println("Raíces cuadradas: " + raiz1 + ", " + raiz2 + ", " + raiz3 + ", " + raiz4 + ", " + raiz5 + ", " + raiz6 + ", " + raiz7 + ", " + raiz8 + ", " + raiz9 + ", " + raiz10);
+        System.out.println("Cuadrados: " + cuadrado1 + ", " + cuadrado2 + ", " + cuadrado3 + ", " + cuadrado4 + ", " + cuadrado5 + ", " + cuadrado6 + ", " + cuadrado7 + ", " + cuadrado8 + ", " + cuadrado9 + ", " + cuadrado10);
+        System.out.println("Media: " + media);
+        System.out.println("Desviación estándar: " + desviacionEstandar);
     }
 }
